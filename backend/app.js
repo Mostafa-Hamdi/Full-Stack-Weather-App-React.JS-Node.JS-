@@ -12,7 +12,7 @@ app.get("/weather", (req, res) => {
   if (!req.query.address) {
     return res.send({ error: "unvalid request, pls send me specific address" });
   }
-  getLatitude(req.query.address, (error, { lat, lon }) => {
+  getLatitude(req.query.address, (error, { lat, lon } = {}) => {
     if (error) {
       return res.send({ error });
     }

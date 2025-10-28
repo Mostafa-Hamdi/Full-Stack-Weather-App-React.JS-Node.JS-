@@ -27,7 +27,7 @@ const getLatitude = (address, callback) => {
 const getForecast = (lat, lon, callback) => {
   request(
     {
-      url: `https://api.weatherstack.com/current?access_key=27cc18fc1e4cdc4e496f8e8014c3f4cc&query=${lat},${lon}`,
+      url: `https://api.weatherstack.com/current?access_key=d05c3b0103b769165793194e1dab7153&query=${lat},${lon}`,
       json: true,
     },
     (error, { body }) => {
